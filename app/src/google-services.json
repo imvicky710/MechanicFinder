@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "118320178253",
+    "firebase_url": "https://caboom-35a18.firebaseio.com",
+    "project_id": "caboom-35a18",
+    "storage_bucket": "caboom-35a18.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:118320178253:android:93a8ad55d8612a0a",
+        "android_client_info": {
+          "package_name": "com.vigneshwar.caboom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "118320178253-q8ebc73ag7p4lp7cma239ob29hhq2p01.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKlGhsYQNXrl5QvdouMGrvp4yoCpVXGgs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

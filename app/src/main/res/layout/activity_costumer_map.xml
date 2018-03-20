@@ -1,0 +1,143 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vigneshwar.caboom.CustomerLoginActivity"
+    android:background="#EFEBDF">
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="520dp"
+        android:layout_marginTop="50dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EFEBDF">
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#EFEBDF"
+                android:text="logout" />
+
+            <Button
+                android:id="@+id/settings"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#EFEBDF"
+                android:text="Settings" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mechanicInfo"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:background="@android:color/white"
+            android:visibility="gone">
+            <ImageView
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:id="@+id/mechanicProfileImage"
+                android:src="@mipmap/ic_default_user"
+                android:padding="20sp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="40sp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mechanicName"
+                    android:paddingBottom="10sp"
+                    android:paddingTop="20sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mechanicPhone"
+                    android:paddingBottom="10sp"
+                    android:paddingTop="20sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/driverCar"
+                    android:paddingBottom="10sp"
+                    android:paddingTop="20sp"/>
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ratingBar"
+                    android:layout_gravity="center"
+                    android:numStars="5"
+                    android:stepSize="0.1"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EFEBDF"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/Motorcycle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Motorcycle" />
+
+                <RadioButton
+                    android:id="@+id/Car"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Car" />
+
+                <RadioButton
+                    android:id="@+id/Others"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Others" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/request"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="#EFEBDF"
+                android:text="call mechanic" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</FrameLayout>
+
